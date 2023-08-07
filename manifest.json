@@ -1,0 +1,21 @@
+{
+    "name": "RANKI AI",
+    "version": "1.0.0",
+    "description": "AI Shopping Assistant",
+    "manifest_version": 3,
+    "author": "Phantom Technologies",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "RANKIAI"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+      ],
+      "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["script.js"]
+        }
+      ]
+}
